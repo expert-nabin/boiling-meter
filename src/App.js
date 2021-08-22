@@ -33,7 +33,7 @@ function App() {
       <h1>Boiling Meter</h1>
       <TemperatureInputInCelsius temperatureInCelsius={temperatureInCelsius} handleTemperatureInCelsius={handleTemperatureInCelsius} />
       <TemperatureInputInFahrenheit temperatureInFarenheit={temperatureInFarenheit}  handleTemperatureInFarenheit={handleTemperatureInFarenheit} />
-      <BoilingResult/>
+      <BoilingResult temperatureInCelsius={temperatureInCelsius}/>
     </div>
   );
 }
