@@ -1,8 +1,9 @@
-function TemperatureInputInCelsius() {
+function TemperatureInputInCelsius({ handleTemperatureInCelsius, temperatureInCelsius }) {
+    
     return(
         <div className="form-item">
             <label>Temperature in Degree Celsius</label>
-            <input />
+            <input type="text"  value={temperatureInCelsius} onChange={handleTemperatureInCelsius} />
         </div>
     )
 }
